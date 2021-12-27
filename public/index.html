@@ -3,11 +3,8 @@
   <head>
     <title> Andy's Website </title>
     <style>
-      img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
+      #parent {white-space: nowrap;}
+      .child{display:inline-block;}
     </style>
   </head>
 
@@ -20,22 +17,35 @@
       <li><h2> My birthday is December 23rd, right before Christmas, but as a result I am the youngest in my grade. </h2></li>
       <li><h2> I love video games, and I have gained an interest to help develop them as my career path. </li>
     </ul>
-    <h3 style="text-align: right;"><i> Here's me typing out this website. </i></h3>
     <br>
+    <h3 style="text-align: right; padding-right: 250px;"><i> Here's me typing out this website. </i></h3>
     <h1><center> My Accomplishments </h1>
     <hr>
     <br>
     <h1><center> Here's some of the stuff I've done over the years. </h1>
-    <br>
-    <h2 style="text-align: left;"> 1) Computer Science Achievements</h2>
-    <h2><p> -I've created a game with 2 of my Grade 12 Computer Science friends using object-oriented programming.
-      Its gameplay is a simple, timed game where a player has around 4 seconds to take out every enemy with projectiles.
-      To the right is a video I created showcasing the game and its code. 
+    <h2 style = "text-align: left;"> 1) General Academics</h2>
+    <h2 style="margin-bottom: 50px;"><p>-Last year in Grade 11, I finished with a 96 grade average, and
+      in Grade 12 I am going to try and remain consistent with my grades, and so far I 
+      have been able to do so, with my 2 current completed courses averaging at a 98.
     </p></h2>
-    <video width = "320" height="240" controls>
+    <img src="grade11honors.jpg" width="500" height="350" style="padding-left: 125px;">
+    <img src="andycourseinfo.PNG" width="500" height="350" style="padding-left: 175px;">
+    <div id="parent">
+    <div class="child"><h3 style="padding-left: 250px;"><i>My Grade 11 Principal Honours</i></h3></div>
+    <div class="child"><h3 style="padding-left: 460px;"><i>My Current Grade 11-12 grades</i></h3></div>
+    </div>
+    <br>
+    <h2 style="text-align: left;"> 2) Computer Science Achievements</h2>
+    <h2 style="margin-bottom: 50px;"><p> -I've created a game with 2 of my Grade 12 Computer Science friends using object-oriented programming.
+      Its gameplay is a simple, timed game where a player has around 4 seconds to take out every enemy with projectiles.
+      Below is a video I created showcasing the game and its code. 
+    </p></h2>
+    <center>
+    <video width = "700" height="500" controls>
       <source src="andygame.mp4" type="video/mp4">
     </video>
-  <body text = black>
-  <body bgcolor="white">
+    </center>
+  <body text = white>
+  <body bgcolor="black">
   </body>
 </html>
