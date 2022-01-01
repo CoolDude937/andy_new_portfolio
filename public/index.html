@@ -10,11 +10,53 @@
     <style>
       #parent {white-space:nowrap;}
       .child{display:inline-block;}
+
+hr.solidLine{
+  border-top:5px solid black;
+}
+.generalButton {
+  background-color: pink;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .generalButton {background-color: rgb(255, 138, 157);}
+
     </style>
   </head>
 
   <body>
     <a name="DocTop"></a>
+      <div class="dropdown">
+        <button class="generalButton">Fast Travel</button>
+        <div class="dropdown-content">
+          <a href="#andysAcademics">My Academic Achievements</a>
+          <a href="#andysTechAccomplishments">My Computer Science/Robotics Achievements</a>
+          <a href="#andysMiscStuff">My Miscallaneous Achievements</a>
+          <a href="#andysFuturePlans">My Future Plans</a>
+        </div>
+      </div>
     <h1><center> Welcome to my website. Let me begin by telling you a little about myself.</h1>
     <img src = "andyatwork.jpg" align=right width="220" height="300" style="margin-right: 25px; margin-left: 25px;">
     <ul>
@@ -23,12 +65,13 @@
       <li><h3> My birthday is December 23rd, right before Christmas, but as a result I am the youngest in my grade.</li>
       <li><h3> I love video games, and I have gained an interest to help develop them as my career path. </li>
     </ul>
+    <h5 style="text-align: right; margin-right: 10px;"><i> Here's me typing out this website. </i></h5>
     <br>
-    <h5 style="text-align: right; padding-right: 10px; margin-right: 10px;"><i> Here's me typing out this website. </i></h5>
-    <h1><center>My Accomplishments </h1>
-    <hr>
+    <h1 style="margin-left:250px;"><center>My Accomplishments</h1></center>
+    <hr class="solidLine">
+    <a name="andysAcademics"></a>
     <h1><center>Here's some of the stuff I've done over the years. </h1>
-    <h2 style = "text-align: left;"> 1) General Academics</h2>
+    <h2 style = "text-align: left; margin-left: 25px;"> 1) General Academics</h2>
     <h4 style="margin-bottom: 50px; margin-left: 25px;"><p>-Last year in Grade 11, I finished with a 96 grade average, and
       in Grade 12 I am going to try and remain consistent with my grades, and so far I 
       have been able to do so, with my 2 current completed courses averaging at a 98.
@@ -40,7 +83,8 @@
     <div class="child"><h5 style="padding-left: 475px;"><i>My Current Grade 11-12 grades</i></div>
     </div>
     <br>
-    <h2 style="text-align: left;"> 2) Computer Science and Robotics Achievements</h2>
+    <a name="andysTechAccomplishments"></a>
+    <h2 style="text-align: left; margin-left: 25px;"> 2) Computer Science and Robotics Achievements</h2>
     <h4 style="margin-bottom: 20px; margin-left: 25px;"><p> -I have created a game with 2 of my Grade 12 Computer Science friends using object-oriented programming.
       Its gameplay is a simple, timed game where a player has around 4 seconds to take out every enemy with projectiles.
       Below is a video I created showcasing the game and its code. 
@@ -61,7 +105,8 @@
       </video>
     </center>
 
-    <h2 style="text-align: left;"> 3) Miscallaneous stuff I've done </h2>
+    <h2 style="text-align: left; margin-left: 25px;"> 3) Miscallaneous stuff I've done </h2>
+    <a name="andysMiscStuff"></a>
     <img src="andybronzecross.jpg" align=right width="300" height="200" style="margin-right: 25px;"> 
     <h4 style="margin-left: 25px;"">-I have completed the Bronze Cross and Bronze Medallion courses in lifesaving, which included First Aid and CPR training.</h4>
 
@@ -73,6 +118,7 @@
     <br>
     
     <h1 style="margin-top: 50px;"><center>What I want to do in the future</center></h1>
+    <a name="andysFuturePlans"></a>
     <img src="nintendo.png" align=right width="400" height="100" style="margin: 10px;"> 
     <h4 style="margin-left: 25px;"><p> I mentioned before that I have gained an interest in developing video games after playing them all my life. Well, that's exactly
       what I want to do. Create, design, and play video games. Since I really like playing them, I figured I might as well make it a career path for me.
@@ -83,7 +129,7 @@
     </p></h4>
 
     <br>
-    <center><a href="#DocTop"> Go to the top of the website </a></center>    
+    <center><a class="generalButton" href="#DocTop"> Go to the top of the website </a></center>    
     <body margin-left="50px;"
   </body>
 </html>
