@@ -38,9 +38,10 @@ const About = () => {
             trying to search for a co-op placement starting in January.
           </p>
           <p>
-            I am interested in game development, but I also want to try a little
-            bit of everything first, before I ultimately decide on a career
-            path. Makes more sense to weigh my options, in my opinion!
+            Not to brag, but personally I believe I work very well in a team
+            environment, maybe as much as I work independently. Coding stuff by
+            myself with music on is fun, but coding with friends is just as
+            enjoyable!
           </p>
           <p>
             I have an optimistic view on life, and I believe that as long as I
