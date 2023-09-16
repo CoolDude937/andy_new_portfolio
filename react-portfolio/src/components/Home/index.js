@@ -9,7 +9,7 @@ import './index.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = 'Andy'.split('')
+  const nameArray = 'ndy'.split('')
   const jobArray = 'A University of Toronto Scarborough Student'.split('')
 
   useEffect(() => {
