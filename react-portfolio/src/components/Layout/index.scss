@@ -48,6 +48,7 @@
     vertical-align: middle;
     display: table-cell;
     max-height: 90%;
+    min-width: 400px;
 
     h1 {
       font-size: 53px;
@@ -113,6 +114,8 @@
 }
 
 .contact-page {
+  display: flex;
+  flex-wrap: wrap;
   .text-zone {
     position: absolute;
     left: 10%;
@@ -122,6 +125,8 @@
     vertical-align: middle;
     display: table-cell;
     max-height: 90%;
+    min-width: 300px;
+    flex: 1;
 
     h1 {
       font-size: 53px;
