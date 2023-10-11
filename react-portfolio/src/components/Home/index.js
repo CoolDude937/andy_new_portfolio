@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 //import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import LogoTitle from '../../assets/images/logo-s.png'
+import AndyPic from '../../assets/images/andyrock.jpg'
 import Loader from 'react-loaders'
 import './index.scss'
 
@@ -45,6 +46,7 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
+        <img className='andy-img' src={AndyPic} alt="this is me!" />
       </div>
       <Loader type="pacman" />
     </>

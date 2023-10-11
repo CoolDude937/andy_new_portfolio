@@ -1,5 +1,5 @@
 import React from 'react';
-import bidenpic from './biden.png';
+import bidenpic from './andybeingscanned.png';
 import '../project.scss';
 
 const HomeSecurity = () => {
