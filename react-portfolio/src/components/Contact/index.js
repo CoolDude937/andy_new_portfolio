@@ -7,7 +7,7 @@ import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const refForm = useRef()
+  const form = useRef()
 
   useEffect(() => {
     return setTimeout(() => {
@@ -19,10 +19,10 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendform(
+      .sendForm(
         'service_qhshqbn',
         'template_85abgsk',
-        refForm.current,
+        form.current,
         'GJfr0Pzf-AwLqXrNx'
       )
       .then(
@@ -55,7 +55,7 @@ const Contact = () => {
             use the form below to contact me!
           </p>
           <div className="contact-form">
-            <form ref={refForm} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input type="text" name="name" placeholder="Name" required />

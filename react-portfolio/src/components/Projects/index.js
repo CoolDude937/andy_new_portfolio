@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
 import Loader from 'react-loaders'
 import ECG from './AllProjects/ECG/ECG'
@@ -8,15 +8,6 @@ import HomeSecurity from './AllProjects/HomeSecurity/homesecurity'
 import './index.scss'
 
 const Projects = () => {
-    const projects = [
-        {
-            id: 1,
-            title: "Emotional Cardiography",
-            image: ECG,
-            link: "https://devpost.com/software/emotional-cardiography-ecg",
-            description: "uOttaHack 5 project I created with 3 teammates."
-        }
-    ]
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = 'Projects:'.split('')
     const jobArray = 'Some stuff I have done!'.split('')
