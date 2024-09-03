@@ -1,0 +1,59 @@
+.projects-page{
+    max-height: 100vh;
+    overflow: auto;
+    .text-zone{
+        position: absolute;
+        left: 35%;
+        top: 12%;
+        transform: translateY(-50%);
+        width: 37%;
+        min-width: 550px;
+        max-width: 550px;
+        max-height: 90%;
+    }
+    h1 {
+        color: #fff;
+        font-size: 56px;
+        line-height: 53px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+
+        &:before {
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            margin-top: -40px;
+            left: 15px;
+            opacity: 0.6;
+        }
+
+        &:after {
+            content: '<h1/>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 20px;
+            animation: fadeIn 1s 1.7s backwards;
+            opacity: 0.6;
+        }
+    }
+}
+
+.projects-section{
+    position: absolute;
+    left: 7.5%;
+    top: 20%;
+}
+
+.project-row {
+    display: flex;
+    flex-direction: row; /* Set the flex direction to create a row */
+    justify-content: space-between; /* Add space between the projects to move the second one to the right */
+    margin-bottom: 150px; /* Add margin to separate rows of projects */
+  }
+  

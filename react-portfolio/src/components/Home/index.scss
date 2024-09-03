@@ -60,6 +60,23 @@
     animation: fadeIn 1s 1.8s backwards;
   }
 
+  .andy-img{
+    position: absolute;
+    padding-left: auto;
+    left: 48%;
+    top: 10%;
+    width: 45%;
+    height: 80%;
+    min-width: 900px;
+    max-width: 1000px;
+    min-height: 650px;
+    max-height: 700px;
+    @media screen and (max-width: 1500px) {
+      max-width: 300px;
+      left: 100%;
+    }
+  }
+
   .flat-button {
     color: #ffd700;
     font-size: 13px;

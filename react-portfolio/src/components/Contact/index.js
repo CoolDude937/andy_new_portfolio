@@ -7,7 +7,7 @@ import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const refForm = useRef()
+  const form = useRef()
 
   useEffect(() => {
     return setTimeout(() => {
@@ -19,16 +19,16 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendform(
+      .sendForm(
         'service_qhshqbn',
         'template_85abgsk',
-        refForm.current,
+        form.current,
         'GJfr0Pzf-AwLqXrNx'
       )
       .then(
         () => {
           alert('Message successfully sent!')
-          window.location.reload(false)
+          form.current.reset();
         },
         () => {
           alert('Failed to send the message, please try again')
@@ -52,7 +52,7 @@ const Contact = () => {
             And no, I did not doxx myself. The map on the right is just the city I live in, not the exact location.
           </p>
           <div className="contact-form">
-            <form ref={refForm} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input type="text" name="name" placeholder="Name" required />

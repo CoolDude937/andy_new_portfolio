@@ -1,0 +1,43 @@
+.project{
+    font-family: 'Coolvetica';
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffd700;
+
+    h2{
+        color: #ffd700;
+        font-weight: normal;
+    }
+
+    a{
+        color: pink;
+        font-weight: normal;
+        font-style:italic;
+        &:hover{
+            color: darkorchid;
+        }
+    }
+}
+
+.project-on-right{
+    font-family: 'Coolvetica';
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffd700;
+    margin-left: auto;
+
+    h2{
+        color: #ffd700;
+        font-weight: normal;
+    }
+
+    a{
+        color: pink;
+        font-weight: normal;
+        font-style:italic;
+        &:hover{
+            color: darkorchid;
+        }
+    }
+}
+  
