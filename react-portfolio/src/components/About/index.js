@@ -33,20 +33,20 @@ const About = () => {
             />
           </h1>
           <p>
-            I am a second year Student studying at the University of Toronto
-            Scarborough in its Computer Science Co-op program. I am currently
-            trying to search for a co-op placement starting in January.
+            I am a third year Student studying at the University of Toronto
+            Scarborough in its Computer Science Co-op program, specializing in Software Engineering.
           </p>
           <p>
-            Not to brag, but personally I believe I work very well in a team
-            environment, maybe as much as I work independently. Coding stuff by
-            myself with music on is fun, but coding with friends is just as
-            enjoyable!
+            Most of my experience in programming has been independent, but recently I have taken
+            some university courses that has let me attempt programming in groups. It is a lot
+            harder than independent work, but I understand it is very important to learn how to work
+            in a team for future endeavors. I look forward to more opportunities to do so.
           </p>
           <p>
-            I have an optimistic view on life, and I believe that as long as I
-            stay persistent, I can eventually accomplish my goals. There's no
-            rush, and my skillset can only go up!
+            Thanks for taking the time to read through my website. I know it's not the best, and none
+            of it is original (even the color scheme is from a youtube tutorial) but I really hope I can
+            make improvements in the future. Something I've learned in my time at university is that everything
+            takes a really long time to learn, and I am especially slow in the brain. So bear with me.
           </p>
         </div>
 

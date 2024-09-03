@@ -48,11 +48,8 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in game development, but I also want to try a little
-            bit of everything first, before I ultimately decide on a career
-            path. Makes more sense to weigh my options, in my opinion! So if you
-            have any requests or questions or just want to say hi, feel free to
-            use the form below to contact me!
+            Here's the obligatory contact form, if you for whatever reason want to send me an email.
+            And no, I did not doxx myself. The map on the right is just the city I live in, not the exact location.
           </p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
