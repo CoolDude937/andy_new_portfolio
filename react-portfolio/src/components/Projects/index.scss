@@ -44,16 +44,27 @@
     }
 }
 
-.projects-section{
-    position: absolute;
-    left: 7.5%;
-    top: 20%;
-}
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
-.project-row {
-    display: flex;
-    flex-direction: row; /* Set the flex direction to create a row */
-    justify-content: space-between; /* Add space between the projects to move the second one to the right */
-    margin-bottom: 150px; /* Add margin to separate rows of projects */
-  }
-  
+.projects-section{
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    .carousel-container {
+        width: 95%;
+        max-width: 550px; /* Constrain the width */
+        
+        .carousel-item img {
+            max-height: 1000vh; /* Adjust to fit your design */
+            width: auto; /* Maintain aspect ratio */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove any extra space below images */
+            margin: 0 auto; /* Center images horizontally */
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            filter: invert(1); /* Example to change control colors if needed */
+        }
+    }
+}

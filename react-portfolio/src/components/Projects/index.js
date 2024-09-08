@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-// import { CCarousel, CCarouselItem } from '@coreui/react'
+import { CCarousel, CCarouselItem, CImage, CCarouselCaption } from '@coreui/react'
 import AnimatedLetters from '../AnimatedLetters'
 import Loader from 'react-loaders'
 import ECG from './AllProjects/ECG/ECG'
@@ -8,7 +8,6 @@ import HomeSecurity from './AllProjects/HomeSecurity/homesecurity'
 import ecgpic from './AllProjects/ECG/ecg.png'
 import andyscannedpic from './AllProjects/HomeSecurity/andybeingscanned.png'
 import geoguesserpic from './AllProjects/UTSC GeoGuesser/geoguesser.jpg'
-
 import './index.scss'
 
 const Projects = () => {
@@ -43,26 +42,21 @@ const Projects = () => {
                 </h1>
             </div>
             <div className="projects-section">
-                <div className='project-row'>
-                    <ECG/>
-                    <GeoGuesser/>
+              <div className="carousel-container">
+                  <CCarousel controls indicators>
+                      <CCarouselItem>
+                          <CImage className="d-block w-100" src={ecgpic} alt="slide 1" />
+                      </CCarouselItem>
+                      <CCarouselItem>
+                          <CImage className="d-block w-100" src={andyscannedpic} alt="slide 2" />
+                      </CCarouselItem>
+                      <CCarouselItem>
+                          <CImage className="d-block w-100" src={geoguesserpic} alt="slide 3" />
+                      </CCarouselItem>
+                  </CCarousel>
                 </div>
-                <div className='project-row'>
-                    <HomeSecurity/>
-                </div>
-            </div>
-        </div>
-        {/* <CCarousel>
-          <CCarouselItem>
-            <CImage className="d-block w-100" src={ecgpic} alt="slide 1" />
-          </CCarouselItem>
-          <CCarouselItem>
-            <CImage className="d-block w-100" src={andyscannedpic} alt="slide 2" />
-          </CCarouselItem>
-          <CCarouselItem>
-            <CImage className="d-block w-100" src={geoguesserpic} alt="slide 3" />
-          </CCarouselItem>
-        </CCarousel> */}
+              </div>
+          </div>
         <Loader type="pacman"/>
       </>
     )
