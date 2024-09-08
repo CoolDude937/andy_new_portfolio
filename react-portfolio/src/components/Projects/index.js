@@ -1,10 +1,14 @@
 import { useEffect, useState } from 'react'
-// import { Link } from 'react-router-dom'
+// import { CCarousel, CCarouselItem } from '@coreui/react'
 import AnimatedLetters from '../AnimatedLetters'
 import Loader from 'react-loaders'
 import ECG from './AllProjects/ECG/ECG'
 import GeoGuesser from './AllProjects/UTSC GeoGuesser/GeoGuesser'
 import HomeSecurity from './AllProjects/HomeSecurity/homesecurity'
+import ecgpic from './AllProjects/ECG/ecg.png'
+import andyscannedpic from './AllProjects/HomeSecurity/andybeingscanned.png'
+import geoguesserpic from './AllProjects/UTSC GeoGuesser/geoguesser.jpg'
+
 import './index.scss'
 
 const Projects = () => {
@@ -13,10 +17,13 @@ const Projects = () => {
     const jobArray = 'Some stuff I have done!'.split('')
 
     useEffect(() => {
-        return setTimeout(() => {
-          setLetterClass('text-animate-hover')
-        }, 4000)
-      }, [])
+      const timeoutId = setTimeout(() => {
+        setLetterClass('text-animate-hover');
+      }, 4000);
+    
+      return () => clearTimeout(timeoutId);
+    }, []);
+
     return (
       <>
         <div className="container projects-page">
@@ -45,6 +52,17 @@ const Projects = () => {
                 </div>
             </div>
         </div>
+        {/* <CCarousel>
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={ecgpic} alt="slide 1" />
+          </CCarouselItem>
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={andyscannedpic} alt="slide 2" />
+          </CCarouselItem>
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={geoguesserpic} alt="slide 3" />
+          </CCarouselItem>
+        </CCarousel> */}
         <Loader type="pacman"/>
       </>
     )

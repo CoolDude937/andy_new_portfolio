@@ -13,10 +13,12 @@ const Home = () => {
   const jobArray = 'A University of Toronto Scarborough Student'.split('')
 
   useEffect(() => {
-    return setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 4000)
-  }, [])
+    const timeoutId = setTimeout(() => {
+      setLetterClass('text-animate-hover');
+    }, 4000);
+  
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   return (
     <>

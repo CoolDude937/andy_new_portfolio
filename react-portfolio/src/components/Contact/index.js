@@ -10,10 +10,12 @@ const Contact = () => {
   const form = useRef()
 
   useEffect(() => {
-    return setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+    const timeoutId = setTimeout(() => {
+      setLetterClass('text-animate-hover');
+    }, 4000);
+  
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault()
@@ -100,7 +102,7 @@ const Contact = () => {
           <MapContainer center={[43.8971, -78.8658]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[43.8971, -78.8658]}>
-              <Popup>Andy lives here, come for some coffee anytime :D</Popup>
+              <Popup>I reside in Oshawa. If you are nearby, I would be happy to meet.</Popup>
             </Marker>
           </MapContainer>
         </div>
